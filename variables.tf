@@ -28,8 +28,8 @@ data "aws_ami" "coreos" {
 }
 
 # path to ssh public key
-variable "public_key_path" {
-  description = "AWS key path"
+variable "public_key" {
+  description = "AWS key"
 }
 
 # name of the key to be used
