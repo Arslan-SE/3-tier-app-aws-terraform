@@ -28,13 +28,13 @@ data "aws_ami" "coreos" {
 }
 
 # path to ssh public key
-variable "public_key_path" {
-  default = "~/.ssh/3-tier.pub"
-}
+#variable "public_key_path" {
+#  default = "~/.ssh/3-tier.pub"
+#}
 
 # name of the key to be used
 variable "key_name" {
-  default = "guilherme-ssh-key"
+  default = "${var.ssh_key_name}"
 }
 
 # EC2 machine instance type 
