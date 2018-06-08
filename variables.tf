@@ -38,5 +38,5 @@ variable "key_name" {
 }
 # EC2 machine instance type 
 variable "instance_type" {
-  default = "t2.micro"
+  default = "t2.small"
 }
