@@ -28,15 +28,14 @@ data "aws_ami" "coreos" {
 }
 
 # path to ssh public key
-#variable "public_key_path" {
-#  default = "~/.ssh/3-tier.pub"
-#}
+variable "public_key_path" {
+  description = "AWS key path"
+}
 
 # name of the key to be used
 variable "key_name" {
-  default = "${var.ssh_key_name}"
+  description = "AWS Key Name"
 }
-
 # EC2 machine instance type 
 variable "instance_type" {
   default = "t2.micro"
